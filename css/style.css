@@ -338,7 +338,7 @@ select:focus {
 /* Hero Section */
 .hero {
   padding: 6rem 0;
-  background-color: var(--off-white);
+  /* background-color: var(--off-white); */
 }
 
 .hero-content {
