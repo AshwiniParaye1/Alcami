@@ -97,6 +97,31 @@ img {
   display: flex;
   justify-content: space-around;
 }
+.ingradient-button {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 25rem;
+  height: 4rem;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  font-family: "NewRailAlphabet", sans-serif;
+  font-weight: 300;
+  color: black;
+  border-radius: 20px; /* Large rounded corners */
+  display: flex;
+  justify-content: space-around;
+}
 .gradient-text {
   background: linear-gradient(
     93.63deg,
@@ -119,6 +144,29 @@ img {
   -webkit-text-stroke: 5px rgba(0, 0, 0, 0);
 
   font-size: 6rem;
+}
+
+.hero2 {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "NewRailAlphabet";
+  font-weight: 600;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
 }
 
 a {
