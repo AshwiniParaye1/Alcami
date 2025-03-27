@@ -1,0 +1,177 @@
+/* Responsive Styles */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 58%;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .testimonial {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  html {
+    font-size: 56%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-gallery,
+  .product-details {
+    flex: none;
+    width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .footer-column {
+    flex: 0 0 calc(50% - 3rem);
+  }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+  html {
+    font-size: 54%;
+  }
+
+  .header-actions {
+    gap: 1.5rem;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .search-box {
+    width: 25rem;
+    right: -7rem;
+  }
+
+  .features-grid {
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .feature-item {
+    flex: 0 0 calc(50% - 3rem);
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    flex: 0 0 100%;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 52%;
+  }
+
+  .hero h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .feature-item {
+    flex: 0 0 100%;
+  }
+
+  .tabs {
+    justify-content: flex-start;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+  .quantity-selector {
+    width: 100%;
+  }
+
+  .quantity-selector input {
+    flex: 1;
+  }
+
+  .footer-links {
+    gap: 2rem;
+  }
+
+  .footer-column {
+    flex: 0 0 100%;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcami - Achieve your highest self</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- Font imports will go here -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="#"><img src="assets/logo.png" alt="Alcami Logo" /></a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Elements</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="search-container">
+              <button class="search-icon" id="searchToggle">
+                <img src="assets/search.png" alt="Search" />
+              </button>
+              <div class="search-box" id="searchBox">
+                <input type="text" placeholder="Search..." />
+                <button class="close-search">×</button>
+              </div>
+            </div>
+            <div class="gradient-button">
+              <span>Try Alcami</span>
+              <span
+                ><img src="/assets/right-arrow.png" alt="" width="18px"
+              /></span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Achieve your highest self.</h1>
+            <div class="hero-buttons">
+              <a href="#" class="btn primary-btn">SHOP NOW</a>
+              <a href="#" class="btn secondary-btn">LEARN MORE</a>
+            </div>
+            <p class="hero-subtitle">A modern take on traditional formulas</p>
+          </div>
+          <div class="hero-image">
+            <img
+              src="/assets/product1.png"
+              alt="Alcami Products"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <img
+              src="assets/feature-icon-1.svg"
+              alt="Feature Icon"
+              loading="lazy"
+            />
+            <p>No Artificial Flavors</p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="assets/feature-icon-2.svg"
+              alt="Feature Icon"
+              loading="lazy"
+            />
+            <p>Gluten-Free & Vegan</p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="assets/feature-icon-3.svg"
+              alt="Feature Icon"
+              loading="lazy"
+            />
+            <p>Third-Party Tested</p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="assets/feature-icon-4.svg"
+              alt="Feature Icon"
+              loading="lazy"
+            />
+            <p>Made in the USA</p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="assets/feature-icon-5.svg"
+              alt="Feature Icon"
+              loading="lazy"
+            />
+            <p>Clinically Proven</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="tabs-section">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="all-products">
+            ALL PRODUCTS
+          </button>
+          <button class="tab-btn" data-tab="bestsellers">BESTSELLERS</button>
+          <button class="tab-btn" data-tab="bundles">BUNDLES</button>
+          <button class="tab-btn" data-tab="shop">SHOP</button>
+          <button class="tab-btn" data-tab="faq">FAQ</button>
+          <button class="tab-btn" data-tab="buy-now-pay-later">
+            BUY NOW PAY LATER
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section" id="alcami-elements">
+      <div class="container">
+        <h2 class="section-title">Alcami Elements</h2>
+        <p class="section-subtitle">
+          A daily supplement designed to enhance your cognitive function, focus,
+          and overall mental performance.
+        </p>
+
+        <div class="product-container">
+          <div class="product-gallery">
+            <div class="main-image">
+              <img
+                id="mainProductImage"
+                src="assets/product-main.png"
+                alt="Alcami Elements"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-controls">
+              <button class="gallery-arrow prev" id="galleryPrev">
+                <img src="assets/arrow-left.svg" alt="Previous" />
+              </button>
+              <div class="gallery-dots" id="galleryDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+              </div>
+              <button class="gallery-arrow next" id="galleryNext">
+                <img src="assets/arrow-right.svg" alt="Next" />
+              </button>
+            </div>
+            <div class="thumbnails" id="productThumbnails">
+              <div class="thumbnail active" data-index="0">
+                <img
+                  src="assets/product-thumb-1.png"
+                  alt="Product Thumbnail"
+                  loading="lazy"
+                />
+              </div>
+              <div class="thumbnail" data-index="1">
+                <img
+                  src="assets/product-thumb-2.png"
+                  alt="Product Thumbnail"
+                  loading="lazy"
+                />
+              </div>
+              <div class="thumbnail" data-index="2">
+                <img
+                  src="assets/product-thumb-3.png"
+                  alt="Product Thumbnail"
+                  loading="lazy"
+                />
+              </div>
+              <div class="thumbnail" data-index="3">
+                <img
+                  src="assets/product-thumb-4.png"
+                  alt="Product Thumbnail"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <h3 class="product-title">Alcami Elements</h3>
+            <div class="product-rating">
+              <div class="stars">
+                <img src="assets/star-filled.svg" alt="Star" />
+                <img src="assets/star-filled.svg" alt="Star" />
+                <img src="assets/star-filled.svg" alt="Star" />
+                <img src="assets/star-filled.svg" alt="Star" />
+                <img src="assets/star-half.svg" alt="Star" />
+              </div>
+              <span class="rating-count">4.8 (254 reviews)</span>
+            </div>
+            <p class="product-price">$49.99</p>
+
+            <div class="product-options">
+              <div class="option-group">
+                <h4>Flavors</h4>
+                <div class="radio-options">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="flavor"
+                      value="original"
+                      checked
+                    />
+                    <span class="radio-custom"></span>
+                    Original
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="flavor" value="chocolate" />
+                    <span class="radio-custom"></span>
+                    Chocolate
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="flavor" value="vanilla" />
+                    <span class="radio-custom"></span>
+                    Vanilla
+                  </label>
+                </div>
+              </div>
+
+              <div class="option-group">
+                <h4>Purchase Type</h4>
+                <div class="radio-options">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="purchase"
+                      value="one-time"
+                      checked
+                    />
+                    <span class="radio-custom"></span>
+                    One-time purchase
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="purchase" value="subscription" />
+                    <span class="radio-custom"></span>
+                    Subscription (Save 15%)
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="purchase" value="bundle" />
+                    <span class="radio-custom"></span>
+                    Bundle (Save 20%)
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" max="99" id="quantity" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <a href="#" class="btn primary-btn add-to-cart" id="addToCartBtn"
+                >ADD TO CART</a
+              >
+            </div>
+
+            <div class="product-meta">
+              <p><strong>Free shipping</strong> on orders over $50</p>
+              <p><strong>30-day money-back guarantee</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 class="stat-number" id="stat1">0%</h3>
+            <p class="stat-text">Improvement in focus and concentration</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" id="stat2">0%</h3>
+            <p class="stat-text">Reduction in mental fatigue</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" id="stat3">0%</h3>
+            <p class="stat-text">Increase in productivity</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" id="stat4">0%</h3>
+            <p class="stat-text">Customer satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="comparison-section">
+      <div class="container">
+        <h2 class="section-title">
+          Why Alcami is the #1 Choice for your Productivity and Performance
+        </h2>
+
+        <div class="table-container">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>
+                  <img
+                    src="assets/alcami-product.png"
+                    alt="Alcami"
+                    loading="lazy"
+                  />
+                  <span>Alcami</span>
+                </th>
+                <th>
+                  <img
+                    src="assets/competitor-1.png"
+                    alt="Competitor 1"
+                    loading="lazy"
+                  />
+                  <span>Competitor 1</span>
+                </th>
+                <th>
+                  <img
+                    src="assets/competitor-2.png"
+                    alt="Competitor 2"
+                    loading="lazy"
+                  />
+                  <span>Competitor 2</span>
+                </th>
+                <th>
+                  <img
+                    src="assets/competitor-3.png"
+                    alt="Competitor 3"
+                    loading="lazy"
+                  />
+                  <span>Competitor 3</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Clinically proven ingredients</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="x-mark">✗</span></td>
+              </tr>
+              <tr>
+                <td>Third-party tested for purity</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+              </tr>
+              <tr>
+                <td>No artificial ingredients</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Gluten-free & vegan</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="x-mark">✗</span></td>
+              </tr>
+              <tr>
+                <td>Money-back guarantee</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Subscription option with savings</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="x-mark">✗</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="comparison-cta">
+          <a href="#" class="btn primary-btn">SHOP NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What our customers are saying</h2>
+
+        <div class="testimonials-container" id="testimonialsContainer">
+          <div class="testimonial">
+            <div class="testimonial-rating">
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+            </div>
+            <p class="testimonial-text">
+              "I've been using Alcami Elements for 3 months now and the
+              difference in my focus and productivity is incredible. I can't
+              imagine my workday without it."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">Sarah J.</p>
+              <p class="author-title">Marketing Director</p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-rating">
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+            </div>
+            <p class="testimonial-text">
+              "As a software developer, I need to stay focused for long periods.
+              Alcami has been a game-changer for my mental clarity and stamina."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">Michael T.</p>
+              <p class="author-title">Senior Developer</p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-rating">
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-half.svg" alt="Star" />
+            </div>
+            <p class="testimonial-text">
+              "I was skeptical at first, but after trying Alcami for a month,
+              I'm a believer. My memory and focus have improved significantly."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">Jennifer L.</p>
+              <p class="author-title">Medical Student</p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-rating">
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+              <img src="assets/star-filled.svg" alt="Star" />
+            </div>
+            <p class="testimonial-text">
+              "The chocolate flavor is delicious and mixes well with my morning
+              coffee. I've noticed a significant improvement in my ability to
+              stay focused throughout the day."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">David R.</p>
+              <p class="author-title">Business Consultant</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="testimonial-arrow prev" id="testimonialPrev">
+            <img src="assets/arrow-left.svg" alt="Previous" />
+          </button>
+          <div class="testimonial-dots" id="testimonialDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+          </div>
+          <button class="testimonial-arrow next" id="testimonialNext">
+            <img src="assets/arrow-right.svg" alt="Next" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">FAQs</h2>
+
+        <div class="faq-container">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>What are the main ingredients in Alcami?</span>
+                <img
+                  src="assets/plus-icon.svg"
+                  alt="Expand"
+                  class="accordion-icon"
+                />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Alcami Elements contains a proprietary blend of clinically
+                  proven ingredients including Bacopa Monnieri, Lion's Mane
+                  Mushroom, Rhodiola Rosea, L-Theanine, and other natural
+                  nootropics that support cognitive function, focus, and mental
+                  clarity.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>How long does it take to see results?</span>
+                <img
+                  src="assets/plus-icon.svg"
+                  alt="Expand"
+                  class="accordion-icon"
+                />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Most users report feeling the effects within 30-45 minutes of
+                  taking Alcami Elements. However, for optimal results, we
+                  recommend consistent daily use for at least 2-4 weeks as the
+                  beneficial effects are cumulative.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>Are there any side effects?</span>
+                <img
+                  src="assets/plus-icon.svg"
+                  alt="Expand"
+                  class="accordion-icon"
+                />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Alcami Elements is made with natural ingredients and is
+                  generally well-tolerated. Some users may experience mild
+                  digestive discomfort when first starting. If you have any
+                  pre-existing medical conditions or are taking medications,
+                  please consult with your healthcare provider before use.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>How should I take Alcami Elements?</span>
+                <img
+                  src="assets/plus-icon.svg"
+                  alt="Expand"
+                  class="accordion-icon"
+                />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  For best results, mix one scoop (included) with 8-10 oz of
+                  water or your favorite beverage. We recommend taking it in the
+                  morning or early afternoon. Avoid taking it in the evening as
+                  it may affect sleep due to its energy-enhancing properties.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>Is Alcami vegan and gluten-free?</span>
+                <img
+                  src="assets/plus-icon.svg"
+                  alt="Expand"
+                  class="accordion-icon"
+                />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Yes, Alcami Elements is 100% vegan and gluten-free. We're
+                  committed to creating products that are accessible to people
+                  with various dietary restrictions and preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-cta">
+          <a href="#" class="btn primary-btn">CONTACT US</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">
+            Sign up and receive up to 15% OFF on your first order
+          </h2>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn primary-btn">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="assets/logo-white.png" alt="Alcami Logo" />
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Shop</h4>
+              <ul>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Bundles</a></li>
+                <li><a href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Learn</h4>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Ingredients</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><img src="assets/facebook-icon.svg" alt="Facebook"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="assets/instagram-icon.svg" alt="Instagram"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="assets/twitter-icon.svg" alt="Twitter"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="assets/youtube-icon.svg" alt="YouTube"
+            /></a>
+          </div>
+          <div class="footer-info">
+            <p>&copy; 2023 Alcami. All rights reserved.</p>
+            <div class="footer-legal">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
